@@ -1,0 +1,389 @@
+/* Base styling for navbar brand */
+
+.navbar-brand h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand h2:hover {
+    color: #ffcc00;
+}
+
+/* Styling for nav-links */
+.nav-link {
+    font-weight: 600;
+    color: #333;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    background-color: #ffcc00; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link on hover */
+    border-radius: 5px;
+}
+
+
+
+/* Search bar */
+.search-bar {
+    position: relative;
+    width: 200px;
+}
+
+.search-bar input {
+    border-radius: 30px;
+    padding: 8px 40px 8px 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin-bottom: 10px;
+    }
+}
+/* Carousel styling */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    background-color: #000;
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+/* Base styling for the service-item */
+.service-item {
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Moves the item slightly upward */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Hover effect for the icons */
+.service-item i {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.service-item:hover i {
+    transform: scale(1.2); /* Slightly enlarges the icon */
+}
+
+/* Optional: for a smooth color transition on hover */
+.service-item h5, .service-item p {
+    transition: color 0.3s ease;
+}
+
+.service-item:hover h5, .service-item:hover p {
+    color: #ffcc00; /* Changes text color on hover */
+}
+/* Define the zoom-in animation */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to images with the zoom-in effect */
+.zoomIn {
+    animation: zoomIn 2s ease-in-out;
+    opacity: 0; /* Ensure image is initially hidden */
+    animation-fill-mode: forwards; /* Make sure the animation stays in its final state */
+}
+
+/* Add delay to each image */
+.image-1 {
+    animation-delay: 0.2s;
+}
+
+.image-2 {
+    animation-delay: 0.5s;
+}
+
+.image-3 {
+    animation-delay: 0.8s;
+}
+
+.image-4 {
+    animation-delay: 0.10s;
+}
+/* General Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to each menu item */
+.col-lg-6 {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Hover effect for image scaling */
+.col-lg-6:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the entire menu item */
+.col-lg-6:hover {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Add subtle shadow effect to the menu items */
+.col-lg-6 {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.col-lg-6:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for price text on hover */
+.col-lg-6:hover .text-warning {
+    color: #e67e22;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Customize small text on hover */
+.col-lg-6:hover small {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Smooth image appearance */
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Center the section title */
+.text-center h5, .text-center h1 {
+    transition: color 0.3s;
+}
+
+/* Hover effect for section title */
+.text-center h5:hover, .text-center h1:hover {
+    color: #e67e22;
+}
+
+#dish h1{
+    margin-top: 50px;
+    text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #0ea10e;
+}
+#dish .card{
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+}
+#dish h6{
+    margin-top: 20px;
+    font-weight: bold;
+}
+#dish h6 span i{
+    float: right;
+    cursor: pointer;
+    font-size: larger;
+    
+}
+#dish h6 span i:hover{
+    transform: scale(1.2);
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.card:hover .icons {
+    opacity: 1;
+    visibility: visible;
+}
+
+.heart-icon,
+.plus-icon {
+    font-size: 24px; /* Adjust size as needed */
+    color: #fff; /* Icon color */
+    background-color: rgba(0, 0, 0, 0.6); /* Background color for contrast */
+    border-radius: 50%;
+    padding: 10px; /* Space around the icon */
+}
+
+/* Positioning the icons to the top-right corner */
+.icons {
+    top: 10px;
+    right: 10px;
+}
+
+/* Optional: Add hover effect to the card */
+.card:hover {
+    transform: scale(1.02); /* Slightly larger on hover */
+}
+.plus-icon:hover{
+    color: white;
+    background-color: #ffb900;
+}
+.heart-icon:hover{
+    color: white;
+    background-color: #ffb900;
+}
+/* General Styling */
+#order {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Heading Styling */
+.heading span {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.heading h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Input Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input, textarea, iframe {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button Hover Animation */
+.btn-primary {
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+   
+    transform: scale(1.05);
+}
+
+/* Input Hover Effect */
+input:focus, textarea:focus {
+    border-color: #333;
+    box-shadow: 0 0 10px rgba(51, 51, 51, 0.2);
+}
+
+/* Input Hover Animation */
+input:hover, textarea:hover {
+    background-color: #ffe680;
+}
+.row{
+    background-color: white;
+    border-radius: 10px;
+}
+.form-label{
+    font-weight: bold;
+}
+/* General styling for team items */
+.team-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-img-container {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-img-container img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Social icons container */
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Initially hidden */
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Smooth transition */
+}
+
+/* Social icons buttons */
+.btn-square {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* On hover, show social icons and scale up the image */
+.team-item:hover .social-icons {
+    transform: translate(-50%, -50%) scale(1); /* Show icons */
+    opacity: 1; /* Make icons visible */
+}
+
+.team-item:hover img {
+    transform: scale(1.1); /* Slight zoom on image */
+}
+
+ul li{
+    list-style-type: none;
+}
